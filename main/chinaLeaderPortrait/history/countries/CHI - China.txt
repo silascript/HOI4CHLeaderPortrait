@@ -1,0 +1,436 @@
+﻿capital = 613 # Nanjing
+
+oob = "CHI_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+}
+
+add_ideas = {
+	german_advisors
+	CHI_communist_uprisings
+}
+
+set_convoys = 40
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+
+	add_ideas = {
+		#laws
+		tot_economic_mobilisation
+		service_by_requirement
+		closed_economy
+
+		#ministers
+		CHI_xie_juezai
+		CHI_deng_xiaoping
+		CHI_bo_yibo
+		CHI_xiao_yisu
+		CHI_chen_shaokuan
+		jiangnan_shipyard_group
+	}
+	
+	set_global_flag = fall_of_nanjing
+	create_faction = chinese_united_front
+	add_to_faction = PRC
+	remove_opinion_modifier = { target = PRC modifier = hostile_status }
+	#load_oob = "CHI_united_front"
+	set_global_flag = CHI_unite
+	oob = "CHI_1939"
+	set_technology = {
+
+		#PLACEHOLDER techs for vehicles
+		motorised_infantry = 1
+		tech_support = 1		
+		tech_recon = 1
+		tech_engineers = 1
+
+		#doctrines
+		air_superiority = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
+	}
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 100
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "蒋介石"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "gfx/leaders/CHI/Portrait_CHI_Generic_Jiang_JS.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "毛泽东"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "Portrait_China_Mao_Zedong.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "汪精卫"
+	desc = "POLITICS_WANG_JINGWEI_DESC"
+	picture = "gfx/leaders/CHI/Portrait_China_Wang_Jingwei.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "张澜"
+	desc = "POLITICS_ZHANG_LAN_DESC"
+	picture = "gfx/leaders/CHI/Portrait_China_Zhang_Lan.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+add_opinion_modifier = { target = PRC modifier = hostile_status }
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 100
+		}
+	}
+		
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
+
+#####################################################
+
+#1935年，国民政府第一次授衔
+#共产生了八位陆军一级上将和一位海军一级上将
+#相当于建国后的十大元帅
+#何应钦、冯玉祥、阎锡山、张学良、李宗仁、
+#唐生智、朱培德、陈济棠、陈绍宽（海军）
+
+#####################################################
+#冯玉祥
+create_field_marshal = {
+	name = "冯玉祥"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Feng_YX.dds"
+	traits = { defensive_doctrine }
+	skill = 7
+}
+
+#阎锡山
+create_field_marshal = {
+	name = "阎锡山"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Yan_XS.dds"
+	traits = { defensive_doctrine }
+	skill = 8
+}
+
+#李宗仁
+create_field_marshal = {
+	name = "李宗仁"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Li_ZR.dds"
+	traits = { defensive_doctrine }
+	skill = 9
+}
+
+#唐生智
+create_field_marshal = {
+	name = "唐生智"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Tang_SZ.dds"
+	traits = { defensive_doctrine }
+	skill = 5
+}
+
+#陈济棠
+create_field_marshal = {
+	name = "陈济棠"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Chen_JT.dds"
+	traits = { defensive_doctrine }
+	skill = 5
+}
+
+#张学良
+create_field_marshal = {
+	name = "张学良"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Zhang_XL.dds"
+	traits = { defensive_doctrine }
+	skill = 4
+}
+
+#何应钦
+create_field_marshal = {
+	name = "何应钦"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_He_YQ.dds"
+	traits = { defensive_doctrine }
+	skill = 5
+}
+
+#陈绍宽
+create_field_marshal = {
+	name = "陈绍宽"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Chen_SK.dds"
+	traits = { seawolf air_controller }
+	skill = 5
+}
+
+
+
+###############################################################
+#程潜
+create_field_marshal = {
+	name = "程潜"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Cheng_Qian.dds"
+	traits = { offensive_doctrine bearer_of_artillery }
+	skill = 3
+}
+
+#张治中
+create_corps_commander = {
+	name = "张治中"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Zhang_ZZ.dds"
+	traits = { hill_fighter }
+	skill = 3
+}
+
+#白崇禧
+create_field_marshal = {
+	name = "白崇禧"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Bai_CX.dds"
+	traits = { thorough_planner fast_planner trickster trait_mountaineer hill_fighter }
+	skill = 8
+}
+
+#陈诚
+create_field_marshal = {
+	name = "陈诚"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Chen_Cheng.dds"
+	traits = { old_guard bearer_of_artillery }
+	skill = 3
+}
+
+#薛岳
+create_field_marshal = {
+	name = "薛岳"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Xue_Yue.dds"
+	traits = { offensive_doctrine trait_mountaineer }
+	skill = 4
+}
+
+#傅作义
+create_corps_commander = {
+	name = "傅作义"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Fu_ZY.dds"
+	traits = { trickster panzer_leader }
+	skill = 3
+}
+
+#胡宗南
+create_corps_commander = {
+	name = "胡宗南"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Hu_ZN.dds"
+	traits = { defensive_doctrine offensive_doctrine }
+	skill = 4
+}
+
+#卫立煌
+create_corps_commander = {
+	name = "卫立煌"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Wei_LH.dds"
+	traits = { defensive_doctrine }
+	skill = 5
+}
+
+#汤恩伯
+create_corps_commander = {
+	name = "汤恩伯"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Tang_EB.dds"
+	traits = { fast_planner trickster }
+	skill = 4
+}
+
+#邱清泉
+create_corps_commander = {
+	name = "邱清泉"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Qiu_QQ.dds"
+	traits = { trait_engineer panzer_leader }
+	skill = 4
+}
+
+#孙立人
+create_corps_commander = {
+	name = "孙立人"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Sun_LR.dds"
+	traits = { jungle_rat }
+	skill = 6
+}
+
+#黄百韬
+create_corps_commander = {
+	name = "黄百韬"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Huang_BT.dds"
+	traits = { hill_fighter }
+	skill = 2
+}
+
+#黄维
+create_corps_commander = {
+	name = "黄维"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Huang_Wei.dds"
+	traits = { hill_fighter }
+	skill = 3
+}
+
+#顾祝同
+create_corps_commander = {
+	name = "顾祝同"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Gu_ZT.dds"
+	traits = { fortress_buster }
+	skill = 3
+}
+
+
+#王耀武
+create_corps_commander = {
+	name = "王耀武"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Wang_YW.dds"
+	traits = { trait_mountaineer }
+	skill = 3
+}
+
+#杜聿明
+create_corps_commander = {
+	name = "杜聿明"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Du_YM.dds"
+	traits = { fast_planner panzer_leader }
+	skill = 5
+}
+
+#戴安澜
+create_corps_commander = {
+	name = "戴安澜"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Dai_AL.dds"
+	traits = { panzer_leader }
+	skill = 3
+}
+
+#廖耀湘
+create_corps_commander = {
+	name = "廖耀湘"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Liao_YX.dds"
+	traits = { panzer_leader }
+	skill = 3
+}
+
+
+
+#胡琏
+create_corps_commander = {
+	name = "胡琏"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Hu_Lian.dds"
+	traits = { defensive_doctrine }
+	skill = 4
+}
+
+
+
+
