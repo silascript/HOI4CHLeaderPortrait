@@ -264,24 +264,41 @@ create_field_marshal = {
 	skill = 5
 }
 
-#陈绍宽
-create_field_marshal = {
-	name = "陈绍宽"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Chen_SK.dds"
-	traits = { seawolf air_controller }
-	skill = 5
-}
 
-
-
-################################上将################################
 #程潜
 create_field_marshal = {
 	name = "程潜"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Cheng_Qian.dds"
-	traits = { offensive_doctrine bearer_of_artillery }
+	traits = { offensive_doctrine }
 	skill = 3
 }
+
+
+#白崇禧
+create_field_marshal = {
+	name = "白崇禧"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Bai_CX.dds"
+	traits = { thorough_planner fast_planner  }
+	skill = 8
+}
+
+#陈诚
+create_field_marshal = {
+	name = "陈诚"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Chen_Cheng.dds"
+	traits = { old_guard }
+	skill = 3
+}
+
+#薛岳
+create_field_marshal = {
+	name = "薛岳"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Xue_Yue.dds"
+	traits = { offensive_doctrine }
+	skill = 4
+}
+
+################################上将################################
 
 #张治中
 create_corps_commander = {
@@ -291,29 +308,6 @@ create_corps_commander = {
 	skill = 3
 }
 
-#白崇禧
-create_field_marshal = {
-	name = "白崇禧"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Bai_CX.dds"
-	traits = { thorough_planner fast_planner trickster trait_mountaineer hill_fighter }
-	skill = 8
-}
-
-#陈诚
-create_field_marshal = {
-	name = "陈诚"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Chen_Cheng.dds"
-	traits = { old_guard bearer_of_artillery }
-	skill = 3
-}
-
-#薛岳
-create_field_marshal = {
-	name = "薛岳"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Xue_Yue.dds"
-	traits = { offensive_doctrine trait_mountaineer }
-	skill = 4
-}
 
 #傅作义
 create_corps_commander = {
@@ -327,7 +321,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "胡宗南"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Hu_ZN.dds"
-	traits = { defensive_doctrine offensive_doctrine }
+	traits = {  }
 	skill = 4
 }
 
@@ -335,7 +329,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "卫立煌"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Wei_LH.dds"
-	traits = { defensive_doctrine }
+	traits = { commando }
 	skill = 5
 }
 
@@ -343,7 +337,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "汤恩伯"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Tang_EB.dds"
-	traits = { fast_planner trickster }
+	traits = { trickster }
 	skill = 4
 }
 
@@ -400,7 +394,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "杜聿明"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Du_YM.dds"
-	traits = { fast_planner panzer_leader }
+	traits = { panzer_leader }
 	skill = 5
 }
 
@@ -426,9 +420,18 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "胡琏"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Hu_Lian.dds"
-	traits = { defensive_doctrine }
+	traits = { }
 	skill = 4
 }
 
+################################海军################################
 
+#陈绍宽
+#钢4竟然没有海军元帅,陈帅只能委屈做个上将了
+create_navy_leader  = {
+	name = "陈绍宽"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Chen_SK.dds"
+	traits = { seawolf air_controller }
+	skill = 5
+}
 
