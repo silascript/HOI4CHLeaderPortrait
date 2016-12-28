@@ -3,4 +3,4 @@ path="mod/chinaLeaderPortrait/"
 tags={
 	"Historical"
 }
-supported_version="1.2.1"
+supported_version="1.3.1"
