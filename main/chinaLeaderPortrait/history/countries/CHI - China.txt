@@ -271,6 +271,7 @@ add_opinion_modifier = { target = PRC modifier = hostile_status }
 create_field_marshal = {
 	name = "杜聿明"
 	gfx = "GFX_portrait_chi_du_yuming"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Du_YM.dds"
 	traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
 	skill = 4
 	attack_skill = 4
