@@ -268,6 +268,22 @@ add_opinion_modifier = { target = PRC modifier = hostile_status }
 	}
 }
 
+
+#########################元帅#########################
+
+# 陈诚
+create_field_marshal = {
+	name = "陈诚"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Chen_Cheng.dds"
+	traits = {  offensive_doctrine trait_reckless career_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+# 杜聿明
 create_field_marshal = {
 	name = "杜聿明"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Du_YM.dds"
@@ -279,6 +295,7 @@ create_field_marshal = {
 	logistics_skill = 3
 }
 
+# 薛岳
 create_field_marshal = {
 	name = "薛岳"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Xue_Yue2.dds"
@@ -290,27 +307,7 @@ create_field_marshal = {
 	logistics_skill = 3
 }
 
-create_field_marshal = {
-	name = "戴安澜"
-	gfx = "GFX_portrait_chi_tai_an_lan"
-	traits = {  offensive_doctrine trait_reckless career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 1
-}
 
-create_field_marshal = {
-	name = "王耀武"
-	gfx = "GFX_portrait_chi_wang_yaowu"
-	traits = { defensive_doctrine trait_cautious infantry_officer }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
 
 
 create_field_marshal = {
@@ -328,17 +325,84 @@ create_field_marshal = {
 ##############################上将################################3
 
 
+
+# 张灵甫
+create_corps_commander = {
+	name = "张灵甫"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Zhang_LF.dds"
+	traits = { infantry_leader brilliant_strategist }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+# 胡琏
+create_corps_commander = {
+	name = "胡琏"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Hu_Lian.dds"
+	traits = { infantry_leader organizer trickster }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+# 余程万
+# 常德保卫战 
+# 日军在常德直接投入攻城的就有116师团两万之众，57师以区区8000人能够顽强坚持了十六天
+create_corps_commander = {
+	name = "余程万"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Yu_ChengW.dds"
+	traits = { infantry_leader inflexible_strategist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+# 孙立人
 create_corps_commander = {
 	name = "孙立人"
-	gfx = "GFX_portrait_chi_sun_li_jen"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Sun_LR.dds"
 	traits = { brilliant_strategist }
-	skill = 4
+	skill = 5
 	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+
+# 戴安澜
+create_corps_commander = {
+	name = "戴安澜"
+	gfx = "GFX_portrait_chi_tai_an_lan"
+	traits = {  infantry_leader war_hero }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+# 王耀武
+create_corps_commander = {
+	name = "王耀武"
+	gfx = "GFX_portrait_chi_wang_yaowu"
+	traits = { brilliant_strategist infantry_leader inflexible_strategist }
+	skill = 3
+	attack_skill = 3
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 2
 }
 
+
+# 胡宗南
 create_corps_commander = {
 	name = "胡宗南"
 	gfx = "GFX_portrait_chi_hu_zongnan"
@@ -350,6 +414,7 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 
+# 顾祝同
 create_corps_commander = {
 	name = "顾祝同"
 	gfx = "GFX_portrait_chi_gu_zhutong"
@@ -361,39 +426,109 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
+# 卫立煌
 create_corps_commander = {
 	name = "卫立煌"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Wei_LH.dds"
-	traits = { infantry_officer }
-	skill = 3
+	traits = { infantry_officer organizer }
+	skill = 4
 	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
 }
 
+# 傅作义
+# 傅善守
 create_corps_commander = {
-	name = "溥作义"
-	gfx = "GFX_portrait_chi_fu_zuoyi"
-	traits = { }
+	name = "傅作义"
+	portrait_path = "gfx/leaders/CHI//Portrait_CHI_Generic_Fu_ZY2.dds"
+	traits = { infantry_leader }
 	skill = 3
-	attack_skill = 3
-	defense_skill = 3
+	attack_skill = 2
+	defense_skill = 4
 	planning_skill = 2
-	logistics_skill = 2
+	logistics_skill = 3
 }
 
-#张自忠
+# 张自忠
+# 1939年12月张自忠率领右翼兵团参加冬季攻势。
+# 12月12日，张自忠率三十八师正面进攻日军，歼灭日军第十三师团第一零三旅团，
+# 于1月初配合第八十四军稳定战线，2月14日发起反攻。
+# 此次战争是抗日战争期间正面战场国民党军发动的惟一一次战略性进攻战役。
 create_corps_commander = {
 	name = "张自忠"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Zhang_ZiZ.dds"
-	traits = { }
+	traits = { winter_specialist infantry_leader }
 	skill = 3
 	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+# 汤恩伯
+# 汤恩伯深得游击战的精髓。国共合作期间，
+# 1939年2月军委会在南岳衡山开办游击干部训练班（简称“南岳游干班”）
+# 专门培养游击干部的短训班，最初汤恩伯是班主任、叶剑英是副班主任。
+create_corps_commander = {
+	name = "汤恩伯"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Tang_EB.dds"
+	traits = { trickster }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+# 关麟佂
+create_corps_commander = {
+	name = "关麟佂"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Guan_LZ.dds"
+	traits = { infantry_leader organizer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+# 罗卓英
+# 罗卓英擅长的是整训军队
+create_corps_commander = {
+	name = "罗卓英"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Luo_ZhuoY.dds"
+	traits = { organizer skilled_staffer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+# 宋希濂
+create_corps_commander = {
+	name = "宋希濂"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Song_XL2.dds"
+	traits = { infantry_leader }
+	skill = 3
+	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 1
 	logistics_skill = 1
 }
 
-
+# 黄维
+create_corps_commander = {
+	name = "黄维"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Huang_Wei.dds"
+	traits = {infantry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
 
