@@ -196,7 +196,7 @@ set_politics = {
 create_country_leader = {
 	name = "蒋介石"
 	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
-	picture = "gfx/leaders/CHI/Portrait_CHI_Generic_Jiang_JS.dds"
+	picture = "gfx/leaders/CHI/Portrait_CHI_Generic_Jiang_JS3.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -218,7 +218,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "汪精卫"
 	desc = "POLITICS_WANG_JINGWEI_DESC"
-	picture = "gfx/leaders/CHI/Portrait_China_Wang_Jingwei.dds"
+	picture = "gfx/leaders/Asia/Portrait_China_Wang_Jingwei.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -270,7 +270,6 @@ add_opinion_modifier = { target = PRC modifier = hostile_status }
 
 create_field_marshal = {
 	name = "杜聿明"
-	gfx = "GFX_portrait_chi_du_yuming"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Du_YM.dds"
 	traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
 	skill = 4
@@ -282,8 +281,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "薛岳"
-	gfx = "GFX_portrait_chi_xue_yue"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Xue_Yue.dds"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Xue_Yue2.dds"
 	traits = { offensive_doctrine trait_reckless brilliant_strategist war_hero }
 	skill = 3
 	attack_skill = 3
@@ -295,7 +293,6 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "戴安澜"
 	gfx = "GFX_portrait_chi_tai_an_lan"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Dai_AL.dds"
 	traits = {  offensive_doctrine trait_reckless career_officer }
 	skill = 3
 	attack_skill = 3
@@ -307,7 +304,6 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "王耀武"
 	gfx = "GFX_portrait_chi_wang_yaowu"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Wang_YW.dds"
 	traits = { defensive_doctrine trait_cautious infantry_officer }
 	skill = 2
 	attack_skill = 2
@@ -316,10 +312,25 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 
+
+create_field_marshal = {
+	name = "张学良"
+	gfx = "GFX_portrait_chi_zhang_xueliang"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+##############################上将################################3
+
+
 create_corps_commander = {
 	name = "孙立人"
 	gfx = "GFX_portrait_chi_sun_li_jen"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Sun_LR.dds"
 	traits = { brilliant_strategist }
 	skill = 4
 	attack_skill = 5
@@ -331,7 +342,6 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "胡宗南"
 	gfx = "GFX_portrait_chi_hu_zongnan"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Hu_ZN.dds"
 	traits = { politically_connected }
 	skill = 4
 	attack_skill = 4
@@ -343,7 +353,6 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "顾祝同"
 	gfx = "GFX_portrait_chi_gu_zhutong"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Gu_ZT.dds"
 	traits = { career_officer }
 	skill = 3
 	attack_skill = 3
@@ -354,7 +363,6 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "卫立煌"
-	gfx = "GFX_portrait_chi_wei_lihuang"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Wei_LH.dds"
 	traits = { infantry_officer }
 	skill = 3
@@ -367,7 +375,6 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "溥作义"
 	gfx = "GFX_portrait_chi_fu_zuoyi"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Fu_ZY.dds"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -376,149 +383,10 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
-create_field_marshal = {
-	name = "张学良"
-	gfx = "GFX_portrait_chi_zhang_xueliang"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Zhang_XL.dds"
-	traits = { }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-
-#################################Mod补全部分#################################
-
-###################################################################
-#补全部分元帅及上将(以上为原版，只翻译中文名及添加头像路径)
-#1935年，国民政府第一次授衔
-#共产生了八位陆军一级上将和一位海军一级上将
-#相当于建国后的十大元帅
-#何应钦、冯玉祥、阎锡山、张学良、李宗仁、
-#唐生智、朱培德、陈济棠、陈绍宽（海军）
-
-
-################################元帅################################
-#冯玉祥
-create_field_marshal = {
-	name = "冯玉祥"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Feng_YX.dds"
-	traits = { }
-	skill = 7
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-#阎锡山
-create_field_marshal = {
-	name = "阎锡山"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Yan_XS.dds"
-	traits = { }
-	skill = 8
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-#李宗仁
-create_field_marshal = {
-	name = "李宗仁"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Li_ZR.dds"
-	traits = { }
-	skill = 9
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 3
-}
-
-#唐生智
-create_field_marshal = {
-	name = "唐生智"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Tang_SZ.dds"
-	traits = { }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-#陈济棠
-create_field_marshal = {
-	name = "陈济棠"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Chen_JT.dds"
-	traits = { }
-	skill = 5
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-
-#何应钦
-create_field_marshal = {
-	name = "何应钦"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_He_YQ.dds"
-	traits = { defensive_doctrine }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-
-#程潜
-create_field_marshal = {
-	name = "程潜"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Cheng_Qian.dds"
-	traits = { }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-
-#白崇禧
-create_field_marshal = {
-	name = "白崇禧"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Bai_CX.dds"
-	traits = { }
-	skill = 8
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-#陈诚
-create_field_marshal = {
-	name = "陈诚"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Chen_Cheng.dds"
-	traits = { }
-	skill = 3
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 2
-}
-
-
-################################上将################################
-
-#张治中
+#张自忠
 create_corps_commander = {
-	name = "张治中"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Zhang_ZZ.dds"
+	name = "张自忠"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Zhang_ZiZ.dds"
 	traits = { }
 	skill = 3
 	attack_skill = 2
@@ -527,95 +395,5 @@ create_corps_commander = {
 	logistics_skill = 1
 }
 
-#汤恩伯
-create_corps_commander = {
-	name = "汤恩伯"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Tang_EB.dds"
-	traits = { trickster }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 2
-}
 
-#邱清泉
-create_corps_commander = {
-	name = "邱清泉"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Qiu_QQ.dds"
-	traits = { trait_engineer panzer_leader }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-
-#黄百韬
-create_corps_commander = {
-	name = "黄百韬"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Huang_BT.dds"
-	traits = { hill_fighter }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-#黄维
-create_corps_commander = {
-	name = "黄维"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Huang_Wei.dds"
-	traits = { hill_fighter }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-
-#廖耀湘
-create_corps_commander = {
-	name = "廖耀湘"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Liao_YX.dds"
-	traits = { panzer_leader }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-
-
-#胡琏
-create_corps_commander = {
-	name = "胡琏"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Hu_Lian.dds"
-	traits = { }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-
-################################海军################################
-
-#陈绍宽
-#钢4竟然没有海军元帅,陈帅只能委屈做个上将了
-create_navy_leader  = {
-	name = "陈绍宽"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Chen_SK.dds"
-	traits = { seawolf air_controller }
-	skill = 5
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 2
-}
 
