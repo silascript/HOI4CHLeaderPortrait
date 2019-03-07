@@ -271,6 +271,30 @@ add_opinion_modifier = { target = PRC modifier = hostile_status }
 
 #########################元帅#########################
 
+# 白崇禧
+create_field_marshal = {
+	name = "白崇禧"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Bai_CX.dds"
+	traits = { brilliant_strategist offensive_doctrine fast_planner thorough_planner expert_delegator }
+	skill = 9
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+# 冯玉祥
+create_field_marshal = {
+	name = "冯玉祥"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Feng_YX.dds"
+	traits = { offensive_doctrine }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
 # 陈诚
 create_field_marshal = {
 	name = "陈诚"
@@ -288,7 +312,7 @@ create_field_marshal = {
 	name = "杜聿明"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Du_YM.dds"
 	traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
-	skill = 4
+	skill = 8
 	attack_skill = 4
 	defense_skill = 4
 	planning_skill = 2
@@ -299,21 +323,44 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "薛岳"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Xue_Yue2.dds"
-	traits = { offensive_doctrine trait_reckless brilliant_strategist war_hero }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 1
+	traits = { offensive_doctrine trait_reckless brilliant_strategist expert_delegator }
+	skill = 9
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 4
 	logistics_skill = 3
 }
 
 
+# 何应钦
+create_field_marshal = {
+	name = "何应钦"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_He_YQ.dds"
+	traits = { politically_connected logistics_wizard defensive_doctrine thorough_planner }
+	skill = 8
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
 
+# 张发奎
+create_field_marshal = {
+	name = "张发奎"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Zhang_FaKui.dds"
+	traits = { thorough_planner defensive_doctrine unyielding_defender organisational_leader }
+	skill = 8
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
 
+# 张学良
 create_field_marshal = {
 	name = "张学良"
 	gfx = "GFX_portrait_chi_zhang_xueliang"
-	traits = { }
+	traits = { inspirational_leader }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -388,6 +435,19 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 1
 }
+
+# 邱清泉
+create_corps_commander = {
+	name = "邱清泉"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Qiu_QQ2.dds"
+	traits = {  infantry_leader panzer_leader }
+	skill = 9
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
+}
+
 
 # 王耀武
 create_corps_commander = {
@@ -495,6 +555,18 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 
+# 刘玉章
+create_corps_commander = {
+	name = "刘玉章"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Liu_YuZh.dds"
+	traits = { infantry_leader organizer }
+	skill = 9
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
 # 罗卓英
 # 罗卓英擅长的是整训军队
 create_corps_commander = {
@@ -530,5 +602,30 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 1
 	logistics_skill = 1
+}
+
+# 郑洞国
+create_corps_commander = {
+	name = "郑洞国"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Zheng_DongG.dds"
+	traits = { infantry_leader }
+	skill = 9
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+
+# 廖耀湘
+create_corps_commander = {
+	name = "廖耀湘"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Liao_YX.dds"
+	traits = {infantry_leader }
+	skill = 9
+	attack_skill = 6
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
 }
 
