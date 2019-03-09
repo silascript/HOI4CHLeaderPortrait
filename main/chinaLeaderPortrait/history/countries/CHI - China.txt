@@ -218,7 +218,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "汪精卫"
 	desc = "POLITICS_WANG_JINGWEI_DESC"
-	picture = "gfx/leaders/Asia/Portrait_China_Wang_Jingwei.dds"
+	picture = "gfx/leaders/CHI/Portrait_China_Wang_Jingwei.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -627,5 +627,24 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 4
 	logistics_skill = 2
+}
+
+
+##############################海军################################3
+
+# 陈绍宽
+create_navy_leader = {
+	name = "陈绍宽"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Chen_SK.dds"
+	traits = { superior_tactician }
+	skill = 9
+}
+
+# 桂永清
+create_navy_leader = {
+	name = "桂永清"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Generic_Gui_YQ2.dds"
+	traits = { superior_tactician }
+	skill = 9
 }
 
